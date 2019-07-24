@@ -301,7 +301,7 @@ class Voting extends React.Component {
 
         const votingUpActive = voting && votingUp;
         const votingDownActive = voting && votingDown;
-        const btnGroupStyle = { 'text-align' : 'center',};
+        const btnGroupStyle = { 'text-align': 'center' };
 
         const slider = up => {
             const b = up
@@ -424,7 +424,7 @@ class Voting extends React.Component {
                 weight
             );
         };
-        
+
         let downVote;
         if (true) {
             const down = (
@@ -593,8 +593,8 @@ class Voting extends React.Component {
 
             avotes.sort(
                 (a, b) =>
-                    Math.abs(parseInt(a.rshares)) >
-                    Math.abs(parseInt(b.rshares))
+                    Math.abs(parseInt(a.estimate)) >
+                    Math.abs(parseInt(b.estimate))
                         ? -1
                         : 1
             );
